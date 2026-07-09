@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Position Property</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .box{
+            height: 100px;
+            width: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container{
+            height: 250px;
+            border: 2px solid black;
+            position: relative;
+        }
+        .sticky{
+            background-color: blueviolet;
+            position: sticky;
+            top:0;
+        }
+        .fixed{
+            background-color: antiquewhite;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+        }
+        .relative{
+            background-color: blue;
+            position: relative;
+            top: 20px;
+            left: 2opx;
+        }
+        .absolute{
+            background-color: red;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+        .spacer{
+            height: 100vh;
+        }
+    </style>
+</head>
+<body>
+    <h2>CSS Position Properties</h2>
+    <div class="box sticky">Sticky</div>
+
+    <div class="container">
+        <div class="box relative">relative</div>
+        <div class="box absolute">absolute</div>
+    </div>
+    
+    <div class="box fixed">Fixed</div>
+    <div class="spacer">Scroll Me</div>
+</body>
+</html>

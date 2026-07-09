@@ -1,0 +1,27 @@
+ * {
+     margin: 0;
+     padding: 0;
+ }
+
+ ul {
+     display: flex;
+     list-style: none;
+     justify-content: center;
+     gap: 40px;
+     font-size: 20px;
+     font-weight: bold;
+ }
+
+ .navbar {
+     list-style: none;
+ }
+
+ nav {
+     background-color: aqua;
+     padding: 15px;
+ }
+
+ li:hover{
+    color: chocolate;
+    cursor: pointer;
+ }
